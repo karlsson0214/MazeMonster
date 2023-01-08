@@ -9,7 +9,7 @@ public class Elf : MonoBehaviour
     private float speed = 10;
     private int direction = 0;
     // Start is called before the first frame update
-    void Start()
+    private void Start()
     {
         rb = GetComponent<Rigidbody2D>();
         rb.gravityScale = 0;
@@ -19,7 +19,7 @@ public class Elf : MonoBehaviour
     }
 
     // Update is called once per frame
-    void FixedUpdate()
+    private void FixedUpdate()
     {
         
 

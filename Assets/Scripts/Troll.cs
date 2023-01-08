@@ -13,7 +13,7 @@ public class Troll : MonoBehaviour
     // 3 - down
     private int direction = 0;
     // Start is called before the first frame update
-    void Start()
+    private void Start()
     {
         rb = GetComponent<Rigidbody2D>();
         // gravity has no effect on Troll
@@ -25,7 +25,7 @@ public class Troll : MonoBehaviour
     }
 
     // Update is called once per physics update
-    void FixedUpdate()
+    private void FixedUpdate()
     {
         if (direction == 0)
         {

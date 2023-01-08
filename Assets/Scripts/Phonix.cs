@@ -12,7 +12,7 @@ public class Phonix : MonoBehaviour
     private List<Vector2> directionVector2 = new List<Vector2>();
 
     // Start is called before the first frame update
-    void Start()
+    private void Start()
     {
         rb = GetComponent<Rigidbody2D>();
         rb.freezeRotation = true;
@@ -24,7 +24,7 @@ public class Phonix : MonoBehaviour
     }
 
     // Update is called once per frame
-    void FixedUpdate()
+    private void FixedUpdate()
     {
 
         // move towards gargoyle

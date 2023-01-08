@@ -7,7 +7,7 @@ public class Player : MonoBehaviour
     private Rigidbody2D rb;
     private float speed = 5;
     // Start is called before the first frame update
-    void Start()
+    private void Start()
     {
         rb = GetComponent<Rigidbody2D>();
         rb.freezeRotation = true;
@@ -17,7 +17,7 @@ public class Player : MonoBehaviour
     }
 
     // Update is called once per frame
-    void FixedUpdate()
+    private void FixedUpdate()
     {
         if (Input.GetKey(KeyCode.A))
         {

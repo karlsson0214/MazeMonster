@@ -11,7 +11,7 @@ public class Game : MonoBehaviour
     public GameObject phonixPrefab;
 
     // Start is called before the first frame update
-    void Start()
+    private void Start()
     {
         // read screen size i world coordinates
         int yMax = (int)Camera.main.orthographicSize;
@@ -90,7 +90,7 @@ public class Game : MonoBehaviour
     }
 
     // Update is called once per frame
-    void Update()
+    private void Update()
     {
         
     }
