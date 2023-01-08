@@ -55,7 +55,7 @@ public class Phonix : MonoBehaviour
         }
         rb.MovePosition(rb.position + directionVector2[direction] * speed * Time.deltaTime);
     }
-    private void MoveTowardsGargoyle()
+    private void MoveTowardsPlayer()
     {
         float deltaX = rbPlayer.position.x - rb.position.x;
         float deltaY = rbPlayer.position.y - rb.position.y;
