@@ -6,12 +6,19 @@ public class Troll : MonoBehaviour
 {
     private Rigidbody2D rb;
     private float speed = 10;
+    // directions
+    // 0 - right
+    // 1 - up
+    // 2 - left
+    // 3 - down
     private int direction = 0;
     // Start is called before the first frame update
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
+        // gravity has no effect on Troll
         rb.gravityScale = 0;
+        // prevent physics enginge to rotate Troll
         rb.freezeRotation = true;
 
         
