@@ -52,18 +52,22 @@ public class Troll : MonoBehaviour
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        int deltaDirection = Random.Range(1, 3); // 1, 2 or 3
-        direction += deltaDirection;
-        direction = direction % 4;
+        SelectDirection();
         SnapToGrid();
     }
 
     private void OnCollisionStay2D(Collision2D collision)
     {
+        SelectDirection();
+        SnapToGrid();
+    }
+
+    private void SelectDirection()
+    {
+        // select new direction, not same direction
         int deltaDirection = Random.Range(1, 3); // 1, 2 or 3
         direction += deltaDirection;
         direction = direction % 4;
-        SnapToGrid();
     }
     private void SnapToGrid()
     {
