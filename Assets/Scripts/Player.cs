@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Gargoyle : MonoBehaviour
+public class Player : MonoBehaviour
 {
     private Rigidbody2D rb;
     private float speed = 5;
@@ -12,7 +12,7 @@ public class Gargoyle : MonoBehaviour
         rb = GetComponent<Rigidbody2D>();
         rb.freezeRotation = true;
         rb.gravityScale = 0;
-        tag = "Gargoyle";
+        tag = "Player";
         
     }
 
